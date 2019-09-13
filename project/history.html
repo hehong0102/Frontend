@@ -1,42 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>history</title>
-    <link href="style.css" rel="stylesheet" />
+  <title>History</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link href="main.css" rel="stylesheet" />
 </head>
-
 <body>
-    <nav class="clearfix">
-        <ul class="clearfix">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="history.html">History</a></li>
-            <li><a href="#">Feature</a></li>
-            <li><a href="#">Contact</a></li>
 
-        </ul>
-    </nav>
-
-    <div class="header">
-        <h1>A brief history of JavaScript</h1>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+	
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Home</a></li>
+        <li class="active"><a href="history.html">History</a></li>
+        <li><a href="features.html">Features</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
     </div>
-
-    <div class="row">
-        <div class="col-3 menu">
-            <uL>
-                <li>origin</li>
-                <li>develop</li>
-                <li>Reference link</li>
-            </ul>
-        </div>
-
-        <div class="col-9 ">
-            <h2>Origin</h2>
-
-
+  </div>
+</nav>
+  
+<div class="container-fluid text-center">    
+  <div class="row content">
+    <h1>A brief history of JavaScript</h1>
+	<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Sidenav</span>
+	<div id="mySidenav" class="sidenav text-left">
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	  <a href="#origin">Origin</a>
+	  <a href="#development">Development</a>
+	  <a href="#references">References</a>
+	</div>
+    <div id="history-main" class="text-left text-main"> 
+            <h2 id="origin">Origin</h2>
             <p> JavaScript was born on the Internet, and came out with the advent of browsers. </p>
             <p> Looking back at its history, we must start with the history of the browser.
                 At the end of 1990, Tim Berners-Lee, a scientist at the European Organization for Nuclear Energy
@@ -90,7 +95,7 @@
             <P> In May 1995, Brendan Eich designed the first version of the language in just 10 days. It is a hodgepodge
                 with
                 multiple sources of grammar.</P>
-            <h2>development</h2>
+            <h2 id="development">Development</h2>
             <p> Netscape's browser scripting language, originally called Mocha, changed to LiveScript in September 1995.
                 In
                 December, Netscape and Sun (the inventor and owner of the Java language) reached an agreement that
@@ -102,8 +107,7 @@
                 as a
                 supplement to Java. It is a lightweight Java that is designed to operate web pages.</p>
             <p>In March 1996, the Navigator 2.0 browser officially built the JavaScript scripting language.</p>
-            <h2>Reference link</h2>
-            <p>
+            <h2 id="references">References</h2>
                 <ul>
 
                     <li>John Dalziel,<a
@@ -117,10 +121,24 @@
                             The Past, Present, and Future of JavaScript</a>
                     </li>
                 </ul>
-            </p>
-
-        </div>
     </div>
-</body>
+  </div>
+</div>
 
+<footer class="container-fluid text-center">
+  <p>&copy;Hong He</p>
+</footer>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("history-main").style.marginLeft = "260px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("history-main").style.marginLeft= "10px";
+}
+</script>
+</body>
 </html>
