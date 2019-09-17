@@ -5,6 +5,10 @@
   border: 0;
 }
 
+.fa-atom {
+    color: green;
+}
+
 .navbar-nav > li > a {
   color : rgb(0,111,62);
   font-size: 1.8em !important;
