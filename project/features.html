@@ -1,35 +1,40 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title>Hello!</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+  <title>Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
         integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="app.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Prompt" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link href="styles.css" rel="stylesheet" />
+  <link href="main.css" rel="stylesheet" />
 </head>
-
 <body>
-    <nav class="nav-wrapper">
-        <div class="logo">
-            <i class="fab fa-js fa-3x">
-            </i> <strong></strong>
-        </div>
-        <div class="burger-icon"><i class="fas fa-bars"></i> MENU</div>
-        <ul class="nav-items main-nav mobile-hide">
-            <li class="list-item"><a href="index.html">Home</a></li>
-            <li class="list-item"><a href="history.html">History</a></li>
-            <li class="list-item"><a href="features.html">Features</a></li>
-            <li class="list-item"><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+
+<nav class="navbar">
+  <div class="container-fluid">
+      <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand fas fa-atom" href="#">JavaScript</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="history.html">History</a></li>
+        <li class="active"><a href="features.html">Features</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
     <div class="main-wrapper">
         <div class="wrapper">
             <div class="featured">
@@ -51,15 +56,15 @@
 
             </div>
             <div class="main-content">
-                <strong><font size="+2"> What Is JavaScript Used For?</font></strong>
+                <h2> What Is JavaScript Used For?</h2>
                 <br>
-                <br>
+
                 Although JavaScript is usually talked about as a language that is primarily designed for front-end web
                 development – and indeed, that’s what I’ve focused on so far – the answer to the question ‘What is
                 JavaScript used for?’ isn’t that simple. Along with interactive web elements, a strong knowledge of
                 JavaScript will allow you to create the following things:
 
-                Games
+                <h3>Games</h3>
 
                 If you’re interested in internet gaming and game development, you might consider using your knowledge of
                 JavaScript to create your browser-based games. Although limitations are surrounding the complexity of
@@ -71,7 +76,7 @@
                 editor (I’ll touch on this again later), come up with an idea for a simple game, and put some time into
                 building it.
 
-                Mobile Apps
+                <h3>Mobile Apps</h3>
 
                 Although most mobile app development is done with operating system specific languages like Swift (iOS)
                 or Java (Android), there is no reason why you can’t build apps with JavaScript. The implementation of
@@ -79,9 +84,8 @@
                 operating systems using the same code. JavaScript appears to be a great choice for mobile app
                 development in the future.
 
-                What is JavaScript used for - Adobe PhoneGap platform
 
-                Web & Server Apps
+                <h3>Web & Server Apps</h3>
 
                 Again, the most common answer to the question “What is JavaScript used for?” is something like ‘creating
                 interactive web elements’. But this isn’t all. The creation of new libraries and frameworks is allowing
@@ -92,7 +96,7 @@
                 Note that this is by no means an exhaustive list. JavaScript is a powerful language, and most things
                 will only be limited by your imagination.
 
-                What is JavaScript?
+                <h2>What is JavaScript?</h2>
                 JavaScript ia text-based programming language used both on the client-side and server-side that allows
                 you to make web pages interactive. Where HTML and CSS are languages that give structure and style to web
                 pages, JavaScript gives web pages interactive elements that engage a user. Common examples of JavaScript
@@ -104,14 +108,14 @@
 
 
 
-                What is JavaScript used for?
+                <h2>What is JavaScript used for?</h2>
                 JavaScript is mainly used for web-based applications and web browsers. But JavaScript is also used
                 beyond the Web in software, servers and embedded hardware controls. Here are some basic things
                 JavaScript is used for:
 
 
 
-                1. Adding interactive behavior to web pages
+                <h3>1. Adding interactive behavior to web pages</h3>
                 JavaScript allows users to interact with web pages. There are almost no limits to the things you can do
                 with JavaScript on a web page – these are just a few examples:
 
@@ -133,7 +137,7 @@
 
 
 
-                2. Creating web and mobile apps
+                <h3>2. Creating web and mobile apps</h3>
                 Developers can use various JavaScript frameworks for developing and building web and mobile apps.
                 JavaScript frameworks are collections of JavaScript code libraries that provide developers with
                 pre-written code to use for routine programming features and tasks—literally a framework to build
@@ -145,19 +149,19 @@
 
 
 
-                3. Building web servers and developing server applications
+                <h3>3. Building web servers and developing server applications</h3>
                 Beyond websites and apps, developers can also use JavaScript to build simple web servers and develop the
                 back-end infrastructure using Node.js.
 
 
 
-                4. Game development
+                <h3>4. Game development</h3>
                 Of course, you can also use JavaScript to create browser games. These are a great way for beginning
                 developers to practice their JavaScript skills.
 
 
 
-                Why use JavaScript over other programming languages?
+                <h2>Why use JavaScript over other programming languages?</h2>
                 Aside from the unlimited possibilities, there are many reasons for web developers to use JavaScript over
                 other programming languages:
 
@@ -182,13 +186,10 @@
             </div>
         </div>
     </div>
-    <footer class="footer">
-        <div class="foot1">
-            <h3 class="logo">Javascript</h3>
-            <br/>
+	<footer class="container-fluid text-right">
+		<p>&copy;Jose</p>
+	</footer>
 
-            <div class="copyright">Made by Hong He & Jose &copy; 2019</div>
-    </footer>
 </body>
 
 </html>
