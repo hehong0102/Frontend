@@ -6,7 +6,7 @@
 }
 
 .fa-atom {
-    color: green;
+  color: green;
 }
 
 .navbar-nav > li > a {
@@ -16,11 +16,11 @@
 
 .icon-bar
 {
-    background-color: green;
+  background-color: green;
 }
 
 .active a {
-	background-color: rgb(251,214,1) !important;
+  background-color: rgb(251,214,1) !important;
 }
 
 .sidenav {
